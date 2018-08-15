@@ -1,11 +1,10 @@
-@media (max-width:670px;){
+@media (max-width:670px){
 
   .container{width:100%;
     height:40px;
-    background-color:#F2F2F2;}
+    background-color:#blue;}
 
-  .detail{
-      width:100%;
+  .detail{width: 100%;
 
 
     }
