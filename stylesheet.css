@@ -84,11 +84,14 @@ body,
 
   .container{width:100%;
     height:40px;
-    background-color:#blue;}
+  }
 
   .detail{width:100%;
 
 
+    }
+    .Myself img{
+      width:100%;
     }
 
   }
