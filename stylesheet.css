@@ -1,181 +1,223 @@
-*{
-  font-family:serif;
-  box-sizing:border-box;
-
+* {
+  box-sizing: border-box;
 }
-.container{width:100%;
-  height:40px;
-  background-color:beige;
-
+html{
+  height:100%;
 }
-header a{
-  list-style: none;
-  float:right;
-  top:0;
-  padding:5px 5px;
-  text-decoration:none;
-  color:black;
-}
-.logo{
-  width:50px;
-float:left;
-}
-.Menu h1{
-  text-align: center;
-
-}
-.icon{
-  width:25%;
-  float:left;
-  text-align: center;
-
-}
-.Do{
-  width:100%;
-  margin-left:30px;
-  margin-right:30px;
+body {
+  margin: 0;
+  font-family: "Hiragino Kaku Gothic ProN", sans-serif;
 }
 
-.icon img{
-  border-radius: 50%;
-
-  width:90%;
-  height: 200px;
-}
-.icon p{
-  font-size:15px;
-  padding:0 3px 0 3px;
-}
-.Myself img{
-  width:800px;
-  height:300px;
-  margin: 0 10px 0;
-
-}
-.Myself p{
-  position:absolute;
-  top:100px;
-  left:350px;
-  color:white;
-
-}
-.Myself{
-  position:relative;
-  text-align:  center;
-background-color:beige;
-}
-.P{
-  border: thick double beige;
-
-}
-.link{
-  text-decoration:none;
-  color:black;
-}
-footer{
-  background-color:#F2F2F2;
-  height:80px;
-
-margin-top:auto;
-}
-body,
-#wrapper {
-  display: flex;
-  flex-direction: column;
-  min-height: 100vh;
-
-}
-@media screen and (max-width: 670px) {
-
-  .container{width:100%;
-    height:40px;
-  }
-
-  .detail{width:100%;
-
-
-    }
-    .Myself img{
-      width:100%;
-    }
-
-  }
-
-  .Portfolio{
-    display:block;
-    width:100%;
-
-  }
-  .Portfolio h2,p{
-    text-align: center;
-
-  }
-  .WebSite{
-    display:block;
-    width:100%;
-    height:350px;
-background-color: white;
-position: absolute;
-margin: 10px auto;
-  }
-  .Web img{
-  height:70%;
-  width:auto;
-
- }
-  .Web{
-    height:250px;
-    width:400px;
-    float:left;
-    border:solid 1px gray;
-    position:relative;
-
-  }
-.WebSite h2{
-  text-align: center;
-}
-.PhotoGallary{
-  height:500px;
-  width:100%;
-background-color: white;
-}
-.PhotoGallary h2{
-text-align: center;
-  }
-  .Title{
-    width:100%;
-    height:800px;
-    background-color:white;
-  }
-  .Title p{text-align: center;
-  font-size: 20px;}
-  .AllPortfolio{
-    width:100%;
-    height:500px;
-    background-color: white;
-    position:relative;
-  }
-  .Contact{
-    width:100%;
-    height:auto;
-    text-align:center;
-
-  }
-.Post{
-  text-align: center;
-}
-.Gallary{
-  width:100%;
-  height:auto;
-  border:solid 2px black;
-}
- img{
-  width:18%;
-  padding-left:60px;
-  margin:auto;
-  padding-top:5px;
-  height:150px;
+a {
+  text-decoration: none;
 }
 header{
-  height:50px;
+  height: 65px;
+width: 100%;
+background-color: rgba(34, 49, 52, 0.9);
+position :fixed;
+top: 0;
+z-index: 10;
+}
+.Container{
+  max-width: 1170px;
+ width: 100%;
+ padding: 0 15px;
+ margin: 0 auto;
+}
+
+.header-left p{
+  font-size:20px;
+  color:white;
+  font-family:'HG行書体'	;
+  position:absolute;
+  top:0;
+
+}
+.header-left{
+width:100px;
+height:70px;
+position:absolute;
+top:0;
+}
+.header-right{
+  float: right;
+    margin-right: -25px;
+
+}
+.A{
+  line-height: 65px;
+  padding: 0 25px;
+  color: white;
+  display: block;
+  float: left;
+  transition: all 0.5s;
+}
+.main{
+color:white;
+position: relative;
+
+}
+.me{
+  width:100%;
+  height:500px;
+  margin:auto;
+  display:block;
+}
+.main p{
+
+  position:absolute; /* 絶対配置 */
+	/* 左から半分 */
+	width:100%; /* 大枠と同じ幅に */
+text-align: center;
+top:200px;
+font-size:50px;
+}
+/*ここまでがMenuの上までのCSS*/
+.menu h1{
+  text-align: center;
+}
+.menu{
+  width:70%;
+display: block;
+margin:0 auto;
+}
+/*上はCreaterの部分*/
+.B{
+  display:block;
+  margin:0 auto;
+  width:60%;
+  border:solid 0.5px black;
+  height:200px;
+}
+.piece{
+  text-align: center;
+}
+.piece a{   display:block;
+  margin:30px auto;
+color:black;
+}
+/*上は中央のCreater Y.H.96のaタグの部分*/
+footer{
+  height: 65px;
+width: 100%;
+background-color: white;
+}
+.footer{
+  text-align: center;
+
+}
+.footer p{
+  color:black;
+  font-size: 8px;
+}
+/*footer*/
+.Contact{
+  background-color:white;
+  height:140px;
+  width:100%;
+  text-align:center;
+}
+.Contact h1{
+  padding-top:70px;
+}
+/*Contact*/
+input,textarea{
+  display:block;
+  width: 500px;
+}
+.C{
+  width:500px;
+  display: block;
+  margin:0 auto;
+}
+/*portfolio*/
+.Portfolio{
+  width:100%;
+}
+.PortfolioTitle{
+  display:block;
+  width:500px;
+  margin:70px auto 0 auto;
+  text-align: center;
+}
+.Web{
+  width:100%;
+}
+.WebSite{
+  display:block;
+  margin:0 auto;
+  width:25%;
+  border:solid 1px black;
+  text-align: center;
+  float:left;
+  height:200px;
+}
+.WebSite img{
+  width:100px;
+  height:100px;
+}
+/*Photo*/
+.PhotoGllary{
+  width:100%;
+  padding-top:20px;
+  text-align: center;
+  position: relative;
+}
+.Photo{
+  display: block;
+  width:100%;
+  height:1200px;
+  margin:10px auto;
+  text-align: center;
+  position:absolute;
+  background-color:white;
+}
+.Photo img{
+  width:500px;
+  height:400px;
+
+}
+/*スマホ用*/
+@media(max-width:750px){
+
+header{
+  height: 55px;
+width: 380px;
+background-color: rgba(34, 49, 52, 0.9);
+position :fixed;
+top: 0;
+z-index: 10;
+
+}
+.container{
+   width: 100%;
+
+  }
+  .header-left p{
+    font-size:20px;
+    color:white;
+    font-family:'HG行書体'	;
+    position:absolute;
+    top:0;
+
+  }
+  .header-left{
+  width:50px;
+  height:40px;
+  position:absolute;
+  top:0;
+  }
+  .A{
+    line-height: 65px;
+    color: white;
+    display: block;
+    float: left;
+    transition: all 0.5s;
+    color:white;
+  }
+  .header-right{
+    float: right;
+      margin-right: -25px;
 }
