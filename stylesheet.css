@@ -181,7 +181,9 @@ input,textarea{
 }
 /*スマホ用*/
 @media(max-width:750px){
-
+*{
+  width:100%;
+}
 header{
   height: 55px;
 width: 380px;
